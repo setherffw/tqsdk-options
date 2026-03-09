@@ -1,0 +1,6 @@
+-e # Python
+__pycache__/
+*.py[cod]
+
+# 脚本目录
+scripts/
