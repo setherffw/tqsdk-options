@@ -2,11 +2,74 @@
 
 > 基于 **TqSdk** 的期权策略集合，持续更新中。
 
+## 项目简介
+
+本仓库专注于**期权量化策略**，涵盖期权定价、对冲、波动率交易、组合策略等方向。  
+所有策略使用 [天勤量化 TqSdk](https://github.com/shinnytech/tqsdk-python) 实现，可直接对接实盘账户。
+
 ## 策略列表
 
-| # | 文件 | 品种 | 策略名称 | 核心逻辑 |
-|---|------|------|---------|---------|
-| 01 | [01_delta_hedge.py](strategies/01_delta_hedge.py) | 50ETF期权 | Delta动态对冲策略 | 持有期权多头，动态调整标的期货对冲Delta风险 |
-| 02 | [02_theta_decay_sell.py](strategies/02_theta_decay_sell.py) | 豆粕期权 | Theta时间价值卖方策略 | 卖出虚值期权收取时间价值，ATR止损管理尾部风险 |
+| # | 策略名称 | 类型 | 标的 | 文件 |
+|---|---------|------|------|------|
+| 01 | 50ETF 期权 Delta 动态对冲策略 | Delta对冲 | 510050.SH | [01_delta_hedge.py](strategies/01_delta_hedge.py) |
+| 02 | 300ETF 期权卖方 Theta 时间价值衰减策略 | Theta套利 | 510300.SH | [02_theta_decay_sell.py](strategies/02_theta_decay_sell.py) |
+| 03 | 波动率曲面套利策略 | 波动率套利 | 510050.SH | [03_vol_surface_arb.py](strategies/03_vol_surface_arb.py) |
+| 04 | 铁鹰式期权组合策略 | 组合策略 | 510050.SH | [04_iron_condor.py](strategies/04_iron_condor.py) |
+| 05 | 波动率套利：跨式组合做多波动率策略 | 波动率交易 | 510050.SH | [05_volatility_straddle.py](strategies/05_volatility_straddle.py) |
+| 06 | 垂直价差：牛市价差组合策略 | 价差策略 | 510050.SH | [06_bull_vertical_spread.py](strategies/06_bull_vertical_spread.py) |
+| 07 | 波动率交易：波动率价差策略 | 波动率交易 | 510050.SH | [07_volatility_spread.py](strategies/07_volatility_spread.py) |
+| 08 | 垂直价差：熊市价差组合策略 | 价差策略 | 510050.SH | [08_bear_put_spread.py](strategies/08_bear_put_spread.py) |
+| 09 | 看跌期权比率价差策略 | 比率价差 | 510050.SH | [09_put_ratio_spread.py](strategies/09_put_ratio_spread.py) |
+| 10 | 风险逆转策略 | 风险逆转 | 510050.SH | [10_risk_reversal.py](strategies/10_risk_reversal.py) |
+| 11 | 波动率交易策略 | 波动率交易 | 510050.SH | [11_volatility_trading.py](strategies/11_volatility_trading.py) |
+| 12 | 备兑看涨期权策略 | 备兑策略 | 510050.SH | [12_covered_call.py](strategies/12_covered_call.py) |
+| 13 | 期权日历价差策略 | 日历价差 | 510050.SH | [13_calendar_spread.py](strategies/13_calendar_spread.py) |
+| 14 | 期权波动率交易策略 | 波动率交易 | 510050.SH | [14_volatility_trading.py](strategies/14_volatility_trading.py) |
+| 15 | 期权Delta中性对冲策略 | Delta对冲 | 510050.SH | [15_delta_neutral_hedge.py](strategies/15_delta_neutral_hedge.py) |
+| 16 | 期权时间价值套利策略 | Theta套利 | 510050.SH | [16_theta_arb.py](strategies/16_theta_arb.py) |
+| 17 | 期权波动率突破策略 | 波动率突破 | 510050.SH | [17_vol_breakout.py](strategies/17_vol_breakout.py) |
+| 18 | 期权保护性看跌策略 | 保护性看跌 | 510050.SH | [18_protective_put.py](strategies/18_protective_put.py) |
+| 19 | 期权保护性看跌策略 | 保护性看跌 | 510050.SH | [19_protective_put.py](strategies/19_protective_put.py) |
+| 20 | 期权牛市价差策略 | 价差策略 | 510050.SH | [20_bull_spread.py](strategies/20_bull_spread.py) |
 
-持续更新中，欢迎 Star ⭐
+## 策略分类
+
+### 🎯 Delta 对冲（Delta Hedging）
+通过动态调整仓位保持 Delta 中性，消除方向性风险。
+
+### ⏰ Theta 套利（Theta Decay）
+利用时间价值衰减特性，卖出期权赚取 Theta 收益。
+
+### 📈 波动率交易（Volatility Trading）
+基于波动率预期进行交易，如跨式组合、宽跨式组合等。
+
+### 🔀 价差策略（Vertical Spreads）
+垂直价差、比率价差、日历价差等组合策略。
+
+### 🛡️ 保护性策略（Protective Strategies）
+保护性看跌期权、备兑看涨期权等。
+
+## 环境要求
+
+```bash
+pip install tqsdk numpy pandas scipy
+```
+
+## 使用说明
+
+1. 替换代码中 `YOUR_ACCOUNT` / `YOUR_PASSWORD` 为你的天勤账号
+2. 根据实际行情调整合约代码和行权价
+3. 建议先用模拟账户（`TqSim()`）回测后再上实盘
+
+## 风险提示
+
+- 期权策略风险较高，请充分理解期权定价原理
+- 波动率交易可能面临 Vega 风险
+- 请充分测试后再使用于实盘
+- 本仓库策略仅供学习研究，不构成投资建议
+
+---
+
+**持续更新中，欢迎 Star ⭐ 关注**
+
+*更新时间：2026-03-11*
