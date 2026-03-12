@@ -31,6 +31,8 @@
 | 18 | 期权保护性看跌策略 | 保护性看跌 | 510050.SH | [18_protective_put.py](strategies/18_protective_put.py) |
 | 19 | 期权保护性看跌策略 | 保护性看跌 | 510050.SH | [19_protective_put.py](strategies/19_protective_put.py) |
 | 20 | 期权牛市价差策略 | 价差策略 | 510050.SH | [20_bull_spread.py](strategies/20_bull_spread.py) |
+| 21 | 期权蝴蝶价差策略 | 组合策略 | 510050.SH | [21_butterfly_spread.py](strategies/21_butterfly_spread.py) |
+| 22 | 期权Vega对冲策略 | 波动率对冲 | 510050.SH | [22_vega_hedge.py](strategies/22_vega_hedge.py) |
 
 ## 策略分类
 
@@ -72,4 +74,4 @@ pip install tqsdk numpy pandas scipy
 
 **持续更新中，欢迎 Star ⭐ 关注**
 
-*更新时间：2026-03-11*
+*更新时间：2026-03-12*
