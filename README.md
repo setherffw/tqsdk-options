@@ -33,6 +33,8 @@
 | 20 | 期权牛市价差策略 | 价差策略 | 510050.SH | [20_bull_spread.py](strategies/20_bull_spread.py) |
 | 21 | 期权蝴蝶价差策略 | 组合策略 | 510050.SH | [21_butterfly_spread.py](strategies/21_butterfly_spread.py) |
 | 22 | 期权Vega对冲策略 | 波动率对冲 | 510050.SH | [22_vega_hedge.py](strategies/22_vega_hedge.py) |
+| 23 | 多因子IV截面选择策略（IV Rank+PCR+期限结构） | 多因子截面 | 510050.SH | [23_multi_factor_iv_cross_section.py](strategies/23_multi_factor_iv_cross_section.py) |
+| 24 | 跨标的期权对冲组合策略（50ETF/300ETF波动率价差） | 跨标的IV价差 | 510050.SH + 510300.SH | [24_cross_etf_vol_hedge.py](strategies/24_cross_etf_vol_hedge.py) |
 
 ## 策略分类
 
@@ -50,6 +52,12 @@
 
 ### 🛡️ 保护性策略（Protective Strategies）
 保护性看跌期权、备兑看涨期权等。
+
+### 🧮 多因子截面策略（Multi-Factor Cross-Section）
+结合IV Rank、PCR情绪因子、期限结构因子综合打分，截面选择最优期权方向。
+
+### 🔗 跨标的IV价差策略（Cross-Asset Vol Spread）
+利用不同ETF期权之间的隐含波动率相对价值，做多低估IV、做空高估IV，双腿对冲风险。
 
 ## 环境要求
 
@@ -74,4 +82,4 @@ pip install tqsdk numpy pandas scipy
 
 **持续更新中，欢迎 Star ⭐ 关注**
 
-*更新时间：2026-03-12*
+*更新时间：2026-03-13*
