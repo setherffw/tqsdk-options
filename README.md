@@ -37,6 +37,8 @@
 | 24 | 跨标的期权对冲组合策略（50ETF/300ETF波动率价差） | 跨标的IV价差 | 510050.SH + 510300.SH | [24_cross_etf_vol_hedge.py](strategies/24_cross_etf_vol_hedge.py) |
 | 25 | 期权Gamma Scalping策略 | Gamma交易 | 510050.SH | [25_gamma_scalping.py](strategies/25_gamma_scalping.py) |
 | 26 | 期权期限结构套利策略 | 期限结构套利 | 510050.SH | [26_term_structure_arb.py](strategies/26_term_structure_arb.py) |
+| 27 | 期权波动率预测Delta对冲策略 | Delta对冲 | 510050.SH | [27_vol_predict_delta_hedge.py](strategies/27_vol_predict_delta_hedge.py) |
+| 28 | 期权波动率微笑套利策略 | 波动率套利 | 510050.SH | [28_vol_smile_arbitrage.py](strategies/28_vol_smile_arbitrage.py) |
 
 ## 策略分类
 
