@@ -39,6 +39,8 @@
 | 26 | 期权期限结构套利策略 | 期限结构套利 | 510050.SH | [26_term_structure_arb.py](strategies/26_term_structure_arb.py) |
 | 27 | 期权波动率预测Delta对冲策略 | Delta对冲 | 510050.SH | [27_vol_predict_delta_hedge.py](strategies/27_vol_predict_delta_hedge.py) |
 | 28 | 期权波动率微笑套利策略 | 波动率套利 | 510050.SH | [28_vol_smile_arbitrage.py](strategies/28_vol_smile_arbitrage.py) |
+| 29 | 波动率期限结构套利策略 | 期限结构套利 | DCE.m（豆粕） | [29_vol_term_structure_arb.py](strategies/29_vol_term_structure_arb.py) |
+| 30 | 波动率偏度反转套利策略 | 偏度反转套利 | SHFE.cu（铜） | [30_vol_skew_reversal_arb.py](strategies/30_vol_skew_reversal_arb.py) |
 
 ## 策略分类
 
