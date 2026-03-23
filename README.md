@@ -43,6 +43,8 @@
 | 30 | 波动率偏度反转套利策略 | 偏度反转套利 | SHFE.cu（铜） | [30_vol_skew_reversal_arb.py](strategies/30_vol_skew_reversal_arb.py) |
 | 31 | 期权希腊值动态风控策略 | Greeks风控 | 510050.SH | [31_greeks_risk_management.py](strategies/31_greeks_risk_management.py) |
 | 32 | 期权箱式价差套利策略 | 箱式套利 | 510050.SH | [32_box_spread_arb.py](strategies/32_box_spread_arb.py) |
+| 33 | 期权波动率偏度交易策略 | 波动率偏度交易 | 510050.SH | [33_volatility_skew_trading.py](strategies/33_volatility_skew_trading.py) |
+| 34 | 期权希腊值风险平价组合策略 | Greeks风险平价 | 510050.SH | [34_greeks_risk_parity_portfolio.py](strategies/34_greeks_risk_parity_portfolio.py) |
 
 ## 策略分类
 
