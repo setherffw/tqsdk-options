@@ -45,6 +45,8 @@
 | 32 | 期权箱式价差套利策略 | 箱式套利 | 510050.SH | [32_box_spread_arb.py](strategies/32_box_spread_arb.py) |
 | 33 | 期权波动率偏度交易策略 | 波动率偏度交易 | 510050.SH | [33_volatility_skew_trading.py](strategies/33_volatility_skew_trading.py) |
 | 34 | 期权希腊值风险平价组合策略 | Greeks风险平价 | 510050.SH | [34_greeks_risk_parity_portfolio.py](strategies/34_greeks_risk_parity_portfolio.py) |
+| 35 | 期权隐含波动率曲面预测与动态对冲策略 | IV预测+Delta对冲 | 510050.SH | [35_iv_surface_prediction_hedging.py](strategies/35_iv_surface_prediction_hedging.py) |
+| 36 | 波动率偏度微笑与期限结构套利策略 | Skew+期限结构套利 | 510050.SH | [36_vol_skew_term_structure_arb.py](strategies/36_vol_skew_term_structure_arb.py) |
 
 ## 策略分类
 
@@ -92,4 +94,4 @@ pip install tqsdk numpy pandas scipy
 
 **持续更新中，欢迎 Star ⭐ 关注**
 
-*更新时间：2026-03-13*
+*更新时间：2026-03-24*
