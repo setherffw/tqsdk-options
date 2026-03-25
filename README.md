@@ -47,6 +47,8 @@
 | 34 | 期权希腊值风险平价组合策略 | Greeks风险平价 | 510050.SH | [34_greeks_risk_parity_portfolio.py](strategies/34_greeks_risk_parity_portfolio.py) |
 | 35 | 期权隐含波动率曲面预测与动态对冲策略 | IV预测+Delta对冲 | 510050.SH | [35_iv_surface_prediction_hedging.py](strategies/35_iv_surface_prediction_hedging.py) |
 | 36 | 波动率偏度微笑与期限结构套利策略 | Skew+期限结构套利 | 510050.SH | [36_vol_skew_term_structure_arb.py](strategies/36_vol_skew_term_structure_arb.py) |
+| 37 | 波动率曲面预测Alpha策略 | 波动率曲面、skew、term structure、Alpha因子 | 期权波动率交易 | [37_vol_surface_alpha.py](strategies/37_vol_surface_alpha.py) |
+| 38 | 期权希腊字母风险平价组合策略 | Delta/Gamma/Theta/Vega风险平价、对冲、再平衡 | 期权组合管理 | [38_greeks_risk_parity_portfolio.py](strategies/38_greeks_risk_parity_portfolio.py) |
 
 ## 策略分类
 
