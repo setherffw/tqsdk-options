@@ -49,6 +49,8 @@
 | 36 | 波动率偏度微笑与期限结构套利策略 | Skew+期限结构套利 | 510050.SH | [36_vol_skew_term_structure_arb.py](strategies/36_vol_skew_term_structure_arb.py) |
 | 37 | 波动率曲面预测Alpha策略 | 波动率曲面、skew、term structure、Alpha因子 | 期权波动率交易 | [37_vol_surface_alpha.py](strategies/37_vol_surface_alpha.py) |
 | 38 | 期权希腊字母风险平价组合策略 | Delta/Gamma/Theta/Vega风险平价、对冲、再平衡 | 期权组合管理 | [38_greeks_risk_parity_portfolio.py](strategies/38_greeks_risk_parity_portfolio.py) |
+| 39 | 期权波动率状态切换对冲策略 | 波动率状态机、希腊值管理 | 螺纹钢/期权 | [39_volatility_regime_switch_hedge.py](strategies/39_volatility_regime_switch_hedge.py) |
+| 40 | 期权Gamma挤压预判与收益增强策略 | Gamma Squeeze预判、Short Strangle | 螺纹钢/期权 | [40_gamma_squeeze_anticipation.py](strategies/40_gamma_squeeze_anticipation.py) |
 
 ## 策略分类
 
@@ -96,4 +98,4 @@ pip install tqsdk numpy pandas scipy
 
 **持续更新中，欢迎 Star ⭐ 关注**
 
-*更新时间：2026-03-24*
+*更新时间：2026-03-26*
